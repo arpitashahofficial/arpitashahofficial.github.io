@@ -1,91 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Salaria's Vimal</title>
+	<title>salaria's vimal</title>
 	<style>
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		header {
-			background-color: #f44336;
-			color: white;
-			padding: 10px;
-			text-align: center;
-			font-size: 30px;
-		}
-		nav {
-			background-color: #333;
-			overflow: hidden;
-		}
-		nav a {
-			float: left;
-			display: block;
-			color: white;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-			font-size: 20px;
-		}
-		nav a:hover {
-			background-color: #ddd;
-			color: black;
-		}
-		section {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-around;
-			padding: 20px;
-		}
-		article {
-			background-color: #f2f2f2;
-			border: 1px solid #ddd;
-			margin: 10px;
-			padding: 20px;
-			width: 300px;
-			height: 400px;
-			text-align: center;
-		}
-		h2 {
-			font-size: 30px;
-		}
-		p {
-			font-size: 20px;
-		}
-        img{
-            max-width: 200px;
-            height: 200px;
-        }
-	</style>
+        body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans';
+    background-image: url(https://wallpapercave.com/wp/wp7419293.jpg);
+}
+
+
+nav{
+    position:fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #fff;
+}
+
+nav .logo{
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size:24px;
+    font-weight:bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding:0;
+    display: flex;
+
+}
+nav ul li a{
+    line-height: 80px;
+    color: #fff;
+    padding:12px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    background: rgba(0,0, 0, 0.7);
+    border-radius: 6px;
+}
+.content h1{
+    font-size: 60px;
+    font-weight:100;
+    margin-top: 270px;
+   margin-bottom: 40px;
+    color:black;
+}
+.content span{
+    font-size: 22px;
+    color: black;
+    margin: auto;
+
+}
+.content{
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.content img{
+    width: 50px;
+    height:47px;
+    float:left;
+}
+.content a{
+    color: black;
+    text-decoration: none;
+
+}
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(90deg, rgb(155, 234, 155),rgb(190, 231, 190));
+    border-radius: 6px;
+    padding:10px 20px;
+    box-sizing: border-box;
+    color: black;
+    box-shadow: 3px 8px 22px rgba(94, 28,68,0.15);
+    
+}
+
+.over-img{
+   width: 70;
+   height:90%;
+    position: absolute;
+    right: 40px;
+    bottom: 5px;
+}
+p{
+    margin-left: 100px;
+    margin-top: 100px;
+   font-weight: bold;
+   
+}
+    </style>
 </head>
-<body>
-	<header>
-		<h1>Salaria's Vimal</h1>
-		<p>Spice up your life with our masalas</p>
-		<p>Manufacturer of blended spices, garam masala & chilli powder in Jammu, Jammu & Kashmir</p>
-	</header>
+
 	<nav>
-		<a href="#">Home</a>
-		<a href="#">Products</a>
-		<a href="#">Contact Us</a>
-	</nav>
-	<section>
-		<article>
-			<img src="https://5.imimg.com/data5/SELLER/Default/2023/2/AU/PF/VS/6412107/new-product-250x250.jpeg" alt="Garam Masala">
-			<h2>Garam Masala</h2>
-			<p>A blend of spices perfect for curries and lentil dishes to soup</p>
-		</article>
-		<article>
-			<img src="https://5.imimg.com/data5/SELLER/Default/2023/2/TY/BH/HI/6412107/new-product-250x250.jpeg" alt="Sambar Masala">
-			<h2>Sambar Masala</h2>
-			<p>A mix of spices great for indian style dals called sambar</p>
-		</article>
-		<article>
-			<img src="https://5.imimg.com/data5/SELLER/Default/2023/2/ZP/YP/OV/6412107/new-product-250x250.jpeg" alt="Rajma Masala">
-			<h2>Rajma masala</h2>
-			<p>A unique blend of spices which is usually served with rice </p>
-		</article>
-	</section>
-</body>
+        <div class="logo">salaria's masale</div>
+        <ul>
+            <li><a herf="#">HOME</a></li>
+            <li><a herf="#">PRODUCTS</a></li>
+            <li><a herf="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+   <div class="content">
+    <h1>Spice up your<br> life with our masalas </h1>
+    
+    <img src="https://www.freeiconspng.com/uploads/location-icon-map-png--1.png">
+    <span><a href="https://www.google.co.in/maps/dir//32.91543000,75.13102000" class="btn">Venus chowk,jammu,jammu and kashmir</a></span>
+    
+   </div>
+   <p>Click on PRODUCTS for product details</p>
+  
+    <img src="https://minartravels.net/wp-content/uploads/2016/05/87-873841_indian-food-png-c.png" class="over-img">
+   
 </html>
